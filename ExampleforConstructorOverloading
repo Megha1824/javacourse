@@ -1,0 +1,57 @@
+package day11;
+
+class Car
+{
+	private String name;
+	private int milage;
+	private int cost;
+	
+	public Car()//zero parameterized constructor
+	{
+		name = "BMW";
+		milage=70;
+		cost = 777777;
+	}
+	public Car(String name, int milage, int cost) {//parameterized constructor
+		super();
+		this.name = name;
+		this.milage = milage;
+		this.cost = cost;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getMilage() {
+		return milage;
+	}
+	public void setMilage(int milage) {
+		this.milage = milage;
+	}
+	public int getCost() {
+		return cost;
+	}
+	public void setCost(int cost) {
+		this.cost = cost;
+	}
+	
+}
+public class ExampleforConstructorOverloading {
+
+	public static void main(String[] args)
+	{
+		
+		Car c1 = new Car();
+		System.out.println(c1.getName());
+		System.out.println(c1.getMilage());
+		System.out.println(c1.getCost());
+		System.out.println("-------------------");
+	    Car c2 = new Car("Swift",30,40000);
+	    System.out.println(c2.getName());
+		System.out.println(c2.getMilage());
+		System.out.println(c2.getCost());
+	
+	}
+}
