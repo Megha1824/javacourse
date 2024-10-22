@@ -1,0 +1,29 @@
+package day11;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Sumcombination {
+	    public static void main(String[] args) {
+	        Scanner scanner = new Scanner(System.in);
+
+	        System.out.println("Enter first number:");
+	        int m = scanner.nextInt();
+
+	        System.out.println("Enter second number:");
+	        int n = scanner.nextInt();
+
+	        System.out.println("Enter third number:");
+	        int k = scanner.nextInt();
+
+	        int[] combinations = {m + n, m + k, n + k};
+	        Arrays.sort(combinations);
+
+	        for (int combination : combinations) {
+	            System.out.println(combination);
+	        }
+
+	        scanner.close();
+	    }
+	}
+
