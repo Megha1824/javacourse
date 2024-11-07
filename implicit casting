@@ -1,0 +1,10 @@
+package day1;
+//implicit casting
+public class code1 {
+	public static void main(String[] args) {
+		byte a=15;
+		double b;
+		b=a;
+		System.out.println(b);
+	}
+}
