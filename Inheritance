@@ -1,0 +1,73 @@
+package inheritance;
+// Shape class (Parent)
+class Shape {
+    // Method to calculate area
+    double getArea() {
+        return 0;
+    }
+}
+
+// Circle subclass
+class Circle extends Shape {
+    private int radius;
+
+    // Constructor
+    public Circle(int radius) {
+        this.radius = radius;
+    }
+
+    // Override getArea() method
+    @Override
+    double getArea() {
+        return Math.PI * radius * radius;
+    }
+}
+
+// Square subclass
+class Square extends Shape {
+    private int length;
+
+    // Constructor
+    public Square(int length) {
+        this.length = length;
+    }
+
+    // Override getArea() method
+    @Override
+    double getArea() {
+        return length * length;
+    }
+}
+
+// Rectangle subclass
+class Rectangle extends Shape {
+    private int width;
+    private int height;
+
+    // Constructor
+    public Rectangle(int width, int height) {
+        this.width = width;
+        this.height = height;
+    }
+
+    // Override getArea() method
+    @Override
+    double getArea() {
+        return width * height;
+    }
+}S
+
+// Main class
+public class Main {
+    public static void main(String[] args) {
+        // Instantiate shapes
+        Circle circle = new Circle(25);
+        Square square = new Square(57);
+        Rectangle rectangle = new Rectangle(4, 9);
+
+        // Print areas
+        System.out.println("Circle Area: " + circle.getArea());
+        System.out.println("Square Area: " + square.getArea());
+        System.out.println("Rectangle Area: " + rectangle.getArea());
+    }
+}
