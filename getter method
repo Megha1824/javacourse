@@ -1,0 +1,14 @@
+package day10;
+
+public class test {
+	//void registerstudent(student st) 
+	
+	public static void main(String[] args) {
+		student s =new student();
+		s.setName("Meghana");
+		System.out.println(s.getName());
+		
+		//test t=new test();
+		//t.registerstudent(s);
+	}
+}
