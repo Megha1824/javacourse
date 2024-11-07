@@ -1,0 +1,11 @@
+package day1;
+
+public class code2a {
+	public static void main(String[] args) {
+		
+	float a=35.5f;
+	int b;
+	b=(int)a;
+	System.out.println(b);
+}
+}
