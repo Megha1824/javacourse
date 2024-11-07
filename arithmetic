@@ -1,0 +1,44 @@
+package day1;
+
+public class code6 {
+	public static void main(String[] args) {
+//arithmetic
+		int num1=25;
+		int num2=30;
+		int result1=num1+num2;
+		int result2=num1-num2;
+		int result3=num1*num2;
+		int result4=num1/num2;
+		int result5=num1%num2;
+		System.out.println(result1);
+		System.out.println(result2);
+		System.out.println(result3);
+		System.out.println(result4);
+		System.out.println(result5);
+
+
+// assignment operators
+   int a=10;
+    System.out.println("A value is " +a);
+    a+=20;
+    System.out.println(a);
+    // relational operators
+    int x=20;
+    int y=40;
+    System.out.println(x>y);
+    System.out.println(x==y);
+    System.out.println(x<y);
+    System.out.println("==============");
+    
+    //logiacl operators
+    int a1=1;
+    int b1=2;
+    boolean res= a1==1 && a1<b1;
+    System.out.println(res);
+    
+    boolean res1=a>5 || a==1;
+    System.out.println(res1);
+    System.out.println(!true);
+    System.out.println(!(20<5));
+}
+}
