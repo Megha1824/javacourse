@@ -1,0 +1,10 @@
+package day1;
+// explicit casting
+public class code2 {
+	public static void main(String[] args) {
+		double a=35.5;
+		byte b;
+		b=(byte)a;
+		System.out.println(b);
+	}
+}
