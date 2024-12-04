@@ -1,0 +1,38 @@
+package overloading;
+
+import java.util.Scanner;
+
+class car {
+    String make, model;
+    short year;
+    int price;
+
+    public car(String make, String model, short year, int price) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+        this.price = price;
+    }
+
+    public void displayDetails() {
+        System.out.println("Make: " + make + "\nModel: " + model + "\nYear: " + year + "\nPrice: Rs." + price);
+    }
+}
+
+public class Car{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter make: ");
+        String make = scanner.next();
+        System.out.print("Enter model: ");
+        String model = scanner.next();
+        System.out.print("Enter year: ");
+        short year = scanner.nextShort();
+        System.out.print("Enter price: ");
+        int price = scanner.nextInt();
+
+        car car = new car(make, model, year, price);
+        car.displayDetails();
+    }
+}
